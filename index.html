@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 03 - Analytics Dashboard</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="bai3.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <header class="header">
+        <h1>Analytics Workspace</h1>
+        <button class="btn-brand">Export</button>
+      </header>
+
+      <div class="layout">
+        <aside class="content-card sidebar">
+          <h2>Filters</h2>
+
+          <label>Date Range</label>
+          <select>
+            <option>Last 7 days</option>
+            <option>Last 30 days</option>
+            <option>Last 90 days</option>
+          </select>
+
+          <label>Channel</label>
+          <select>
+            <option>All channels</option>
+            <option>Organic</option>
+            <option>Paid</option>
+          </select>
+        </aside>
+
+        <section class="main-content">
+          <div class="metrics">
+            <article class="content-card">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1828/1828919.png"
+              />
+              <h3>Visitors</h3>
+              <p class="value">42,100</p>
+            </article>
+
+            <article class="content-card">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/992/992700.png"
+              />
+              <h3>Conversion Rate</h3>
+              <p class="value">3.8%</p>
+            </article>
+
+            <article class="content-card">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+              />
+              <h3>Bounce Rate</h3>
+              <p class="value">28%</p>
+            </article>
+          </div>
+
+          <section class="content-card">
+            <h2>Top Pages</h2>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Page</th>
+                  <th>Views</th>
+                  <th>Conversion</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Homepage</td>
+                  <td>18,400</td>
+                  <td><span class="badge-soft">4.2%</span></td>
+                </tr>
+                <tr>
+                  <td>Pricing</td>
+                  <td>8,120</td>
+                  <td><span class="badge-soft">6.1%</span></td>
+                </tr>
+                <tr>
+                  <td>Blog</td>
+                  <td>5,900</td>
+                  <td><span class="badge-soft">1.9%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

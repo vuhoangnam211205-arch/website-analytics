@@ -1,0 +1,98 @@
+:root {
+  --primary: #7c3aed;
+  --blue: #3b82f6;
+  --red: #f43f5e;
+  --green: #22c55e;
+  --yellow: #facc15;
+
+  --bg: linear-gradient(135deg, #667eea, #764ba2, #ff6a88);
+  --text: #2d1b4e;
+  --white: #ffffff;
+
+  --radius: 16px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background: var(--bg);
+  background-size: 300% 300%;
+  animation: bgMove 12s ease infinite;
+  color: var(--text);
+}
+
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.content-card {
+  border-radius: var(--radius);
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+header {
+  color: white;
+}
+
+.btn-brand {
+  background: linear-gradient(135deg, var(--primary), var(--blue));
+  border: none;
+  color: white;
+  border-radius: 999px;
+}
+
+article:nth-child(1) {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  color: white;
+}
+
+article:nth-child(2) {
+  background: linear-gradient(135deg, #43e97b, #38f9d7);
+  color: white;
+}
+
+article:nth-child(3) {
+  background: linear-gradient(135deg, #fa709a, #fee140);
+  color: white;
+}
+
+aside {
+  background: linear-gradient(135deg, #dfe9f3, #ffffff);
+}
+
+table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.badge-soft {
+  background: linear-gradient(135deg, var(--red), var(--yellow));
+  color: white;
+}
+.metric {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.metric img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.metric .value {
+  font-size: 20px;
+  font-weight: bold;
+}
